@@ -1,11 +1,12 @@
 {
-  "id": "90707cd0-5ec3-4692-a7c5-aa8f2b415c9d",
-  "name": "Plantilla",
+  "id": "943afe87-25a2-4345-8051-a5039fa7714a",
+  "name": "Mandatory-Fields",
   "publisher": "Default Publisher",
   "version": "1.0.0.0",
   "brief": "",
   "description": "",
   "privacyStatement": "",
+    "supportedLocales": ["es-ES"],
   "EULA": "",
   "help": "",
   "url": "",
@@ -13,11 +14,11 @@
   "dependencies": [],
   "screenshots": [],
   "platform": "1.0.0.0",
-  "application": "21.0.0.0",
+  "application": "23.0.0.0",
   "idRanges": [
-    {
-      "from": 50000,
-      "to": 50200
+{
+      "from": 50400,
+      "to": 50449
     }
   ],
   "resourceExposurePolicy": {
@@ -25,7 +26,7 @@
     "allowDownloadingSource": true,
     "includeSourceInSymbolFile": true
   },
-  "runtime": "10.0",
+  "runtime": "12.0",
   "features": [
     "NoImplicitWith"
   ]

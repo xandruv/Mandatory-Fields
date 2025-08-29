@@ -1,0 +1,15 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": 
+    {
+    "cSpell.words": [],
+    "CRS.FileNamePattern": "<ObjectNameShort>.al", //Para que el nombre del archivo solo indique el nombre y no "tab50000.Nombre Archivo"
+    "CRS.RemovePrefixFromFilename": true, //Para no incluir el prefijo en el nombre del archivo
+    "CRS.OnSaveAlFileAction": "Rename", //Para que al guardar el objeto, actualice el nombre del archivo
+    "ALTB.CheckCommentTranslations": true,
+    }
+}

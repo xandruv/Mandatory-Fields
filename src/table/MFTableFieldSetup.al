@@ -20,7 +20,7 @@ table 50401 MFTableFieldSetup
         {
             Caption = 'Field Name', Comment = 'ESP="Nombre de campo"';
             FieldClass = FlowField;
-            CalcFormula = lookup(Field.FieldName where(TableNo = field(TableNo), "No." = field(FieldNo)));
+            CalcFormula = lookup(Field."Field Caption" where(TableNo = field(TableNo), "No." = field(FieldNo)));
             Editable = false;
         }
     }

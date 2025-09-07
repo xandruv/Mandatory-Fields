@@ -53,6 +53,26 @@ codeunit 50400 MFFieldsControl
     var
         lbl001: Label 'Field %1 can not be empty', Comment = 'ESP="El campo %1 no puede estar vacío"';
     begin
+        case fieldRef.Type of
+
+            fieldRef.Type::Integer:
+                begin
+                    if Format(fieldRef.Value) = '0' then begin
+                        Error(lbl001, fieldRef.Caption);
+                    end;
+                    exit;
+                end;
+
+            fieldRef.Type::Decimal:
+                begin
+                    if Format(fieldRef.Value) = '0' then begin
+                        Error(lbl001, fieldRef.Caption);
+                    end;
+
+                    exit;
+                end;
+        end;
+
         if Format(fieldRef.Value) = '' then begin
             Error(lbl001, fieldRef.Caption);
         end;

@@ -44,7 +44,6 @@ page 50401 MFTableFieldSetup
         field.SetRange(TableNo, Rec.TableNo);
         field.FindSet();
         selectorPage.SetTableView(field);
-        if (selectorPage.RunModal = Action::OK) then begin
-        end;
+        selectorPage.RunModal();
     end;
 }

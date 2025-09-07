@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="Mandatory Fields (MF)">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 346107420 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Mandatory Fields Table Field Setup</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Configuración de campos obligatorios de la tabla"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MFTableFieldSetup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 346107420 - Field 166597695 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Name</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Nombre de campo"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MFTableFieldSetup - Field FieldName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 346107420 - Field 2547700717 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field No</source>
+          <note from="Developer" annotates="general" priority="2">ESP="N.º de campo"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MFTableFieldSetup - Field FieldNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 346107420 - Field 103915345 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table No</source>
+          <note from="Developer" annotates="general" priority="2">ESP="N.º de tabla"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MFTableFieldSetup - Field TableNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4220703750 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Mandatory Fields Table Setup</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Configuración de campos obligatorios por tabla"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MFTableSetup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4220703750 - Field 730832363 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table Name</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Nombre de tabla"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MFTableSetup - Field TableName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4220703750 - Field 103915345 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table No</source>
+          <note from="Developer" annotates="general" priority="2">ESP="N.º de tabla"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MFTableSetup - Field TableNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2921186151 - Method 1922780731 - NamedType 755919981" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field %1 can not be empty</source>
+          <note from="Developer" annotates="general" priority="2">ESP="El campo %1 no puede estar vacío"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit MFFieldsControl - Method CheckFieldsAndCollectErrors - NamedType lbl001</note>
+        </trans-unit>
+        <trans-unit id="Page 1000439638 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Mandatory Fields Table Field Selector</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Selector de campos"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page MFTableFieldSelector - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1000439638 - Method 4177352842 - NamedType 755919981" size-unit="char" translate="yes" xml:space="preserve">
+          <source>For changing fields, you must use the actions. Do you want to exit without changing any field?</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Para modificar campos, utilice las acciones. ¿Desea salir sin modificar ningún campo?"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page MFTableFieldSelector - Method OnQueryClosePage - NamedType lbl001</note>
+        </trans-unit>
+        <trans-unit id="Page 1000439638 - Control 591687132 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Already added</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Añadido"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page MFTableFieldSelector - Control included - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1000439638 - Action 183296051 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Add fields</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Añadir campos"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page MFTableFieldSelector - Action Fields - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1000439638 - Action 1834721653 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Add fields</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Añadir campos"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page MFTableFieldSelector - Action MFAddFields - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1000439638 - Action 1834721653 - Method 1377591017 - NamedType 1393616598" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You have added %1 fields.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Se han añadido %1 campos"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page MFTableFieldSelector - Action MFAddFields - Method OnAction - NamedType lbl000</note>
+        </trans-unit>
+        <trans-unit id="Page 1000439638 - Action 2082548352 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Remove fields</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Quitar campos"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page MFTableFieldSelector - Action MFRemoveFields - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1000439638 - Action 2082548352 - Method 1377591017 - NamedType 1393616598" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You have removed %1 fields.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Se han quitado %1 campos"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page MFTableFieldSelector - Action MFRemoveFields - Method OnAction - NamedType lbl000</note>
+        </trans-unit>
+        <trans-unit id="Page 1000439638 - Action 3383493608 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Process</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Proceso"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page MFTableFieldSelector - Action Category_Process - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 346107420 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Mandatory Fields Table Field Setup</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Configuración de campos obligatorios de la tabla"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page MFTableFieldSetup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4220703750 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Mandatory Fields Table Setup</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Configuración de campos obligatorios por tabla"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page MFTableSetup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4220703750 - Action 183296051 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fields Setup</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Configuración campos"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page MFTableSetup - Action Fields - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4220703750 - Action 346107420 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fields Setup</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Configuración campos"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page MFTableSetup - Action MFTableFieldSetup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4220703750 - Action 2035395679 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fields Setup</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Configuración campos"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page MFTableSetup - Action Category_Navigation - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

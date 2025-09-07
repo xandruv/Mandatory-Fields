@@ -1,15 +1,15 @@
 {
   "id": "943afe87-25a2-4345-8051-a5039fa7714a",
-  "name": "Mandatory-Fields",
-  "publisher": "Default Publisher",
+  "name": "Mandatory Fields (MF)",
+  "publisher": "Xandruv",
   "version": "1.0.0.0",
   "brief": "",
   "description": "",
   "privacyStatement": "",
-    "supportedLocales": ["es-ES"],
+  "supportedLocales": ["es-ES"],
   "EULA": "",
   "help": "",
-  "url": "",
+  "url": "https://www.linkedin.com/in/ahuertav/",
   "logo": "",
   "dependencies": [],
   "screenshots": [],
@@ -26,8 +26,9 @@
     "allowDownloadingSource": true,
     "includeSourceInSymbolFile": true
   },
-  "runtime": "12.0",
+  "runtime": "13.0",
   "features": [
-    "NoImplicitWith"
+    "NoImplicitWith",
+    "TranslationFile"
   ]
 }

@@ -33,6 +33,18 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table MFTableSetup - Property Caption</note>
           <target>Configuración de campos obligatorios por tabla</target>
         </trans-unit>
+        <trans-unit id="Table 4220703750 - Method 3152277940 - NamedType 755919981" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table %1 has mandatory fields. Do you want to delete them?</source>
+          <note from="Developer" annotates="general" priority="2">ESP="La tabla %1 contiene campos obligatorios configurados. ¿Desea eliminarlos?"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MFTableSetup - Method OnDelete - NamedType lbl001</note>
+          <target>La tabla %1 contiene campos obligatorios configurados. ¿Desea eliminarlos?</target>
+        </trans-unit>
+        <trans-unit id="Table 4220703750 - Method 3152277940 - NamedType 118223364" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Deletion was canceled</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Operación cancelada"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table MFTableSetup - Method OnDelete - NamedType lbl002</note>
+          <target>Operación cancelada</target>
+        </trans-unit>
         <trans-unit id="Table 4220703750 - Field 730832363 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Table Name</source>
           <note from="Developer" annotates="general" priority="2">ESP="Nombre de tabla"</note>

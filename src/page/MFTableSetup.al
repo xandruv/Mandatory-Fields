@@ -5,7 +5,6 @@ page 50400 MFTableSetup
     PageType = List;
     SourceTable = MFTableSetup;
     UsageCategory = Lists;
-    ModifyAllowed = false;
 
     layout
     {

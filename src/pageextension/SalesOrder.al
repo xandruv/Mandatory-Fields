@@ -1,6 +1,5 @@
-pageextension 50400 MFCustomerCard extends "Customer Card"
+pageextension 50403 SalesOrder extends "Sales Order"
 {
-
     trigger OnQueryClosePage(CloseAction: Action): Boolean
     var
         MFFieldsControl: Codeunit MFFieldsControl;

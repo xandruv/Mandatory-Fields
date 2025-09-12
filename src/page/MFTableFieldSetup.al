@@ -5,7 +5,6 @@ page 50401 MFTableFieldSetup
     PageType = List;
     SourceTable = MFTableFieldSetup;
     UsageCategory = None;
-
     layout
     {
         area(Content)

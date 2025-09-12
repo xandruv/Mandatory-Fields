@@ -6,6 +6,7 @@ pageextension 50401 MFVendorCard extends "Vendor Card"
         MFFieldsControl: Codeunit MFFieldsControl;
         recRef: RecordRef;
     begin
-        MFFieldsControl.ControlFields(rec.RecordId.TableNo, Rec."No.");
+        recRef.Get(Rec.RecordId);
+        MFFieldsControl.ControlFields(recRef);
     end;
 }

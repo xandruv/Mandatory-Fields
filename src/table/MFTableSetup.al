@@ -25,4 +25,18 @@ table 50400 MFTableSetup
             Clustered = true;
         }
     }
+
+    trigger OnDelete()
+    var
+        MFTableFieldSetup: Record MFTableFieldSetup;
+        lbl001: Label 'Table %1 has mandatory fields. Do you want to delete them?', Comment = 'ESP="La tabla %1 contiene campos obligatorios configurados. ¿Desea eliminarlos?"';
+        lbl002: Label 'Deletion was canceled', Comment = 'ESP="Operación cancelada"';
+    begin
+        MFTableFieldSetup.Reset();
+        MFTableFieldSetup.SetRange(TableNo, Rec.TableNo);
+        if MFTableFieldSetup.FindSet() then
+            if not Confirm(lbl001, false, Rec.TableName) then
+                Error(lbl002);
+        MFTableFieldSetup.DeleteAll(true);
+    end;
 }

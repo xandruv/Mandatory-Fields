@@ -6,6 +6,7 @@ pageextension 50402 MFItemCard extends "Item Card"
         MFFieldsControl: Codeunit MFFieldsControl;
         recRef: RecordRef;
     begin
-        MFFieldsControl.ControlFields(rec.RecordId.TableNo, Rec."No.");
+        recRef.Get(Rec.RecordId);
+        MFFieldsControl.ControlFields(recRef);
     end;
 }

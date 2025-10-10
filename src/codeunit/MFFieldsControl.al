@@ -25,11 +25,42 @@ codeunit 50400 MFFieldsControl
                     errors.Message := GetLastErrorText;
                     errors."Table Number" := recRef.Number;
                     errors."Field Number" := fieldRef.Number;
+                    errors."Additional Information" := TranslateTableName(recRef, Format(recRef.RecordId));
                     errors.Insert()
                 end;
             until MFTableFieldSetup.Next() = 0;
         if errors.Count > 0 then
             Page.RunModal(Page::"Error Messages Part", errors)
+    end;
+
+    /// <summary>
+    /// ControlFieldsLines
+    /// </summary>
+    /// <param name="recRef"></param>
+    /// <param name="errors"></param>
+    procedure ControlFieldsLines(var recRef: RecordRef; var errors: Record "Error Message" temporary)
+    var
+        MFTableFieldSetup: Record MFTableFieldSetup;
+        fieldRef: FieldRef;
+        isHandled: Boolean;
+    begin
+        OnBeforeControlFieldsLines(isHandled, recRef);
+        if isHandled then
+            exit;
+        MFTableFieldSetup.Reset();
+        MFTableFieldSetup.SetRange(TableNo, recRef.Number);
+        if MFTableFieldSetup.FindSet() then
+            repeat
+                fieldRef := recRef.Field(MFTableFieldSetup.FieldNo);
+                if not CheckFieldsAndCollectErrors(fieldRef, recRef) then begin
+                    errors.ID += 1;
+                    errors.Message := GetLastErrorText;
+                    errors."Table Number" := recRef.Number;
+                    errors."Field Number" := fieldRef.Number;
+                    errors."Additional Information" := TranslateTableName(recRef, Format(recRef.RecordId));
+                    errors.Insert()
+                end;
+            until MFTableFieldSetup.Next() = 0;
     end;
 
     /// <summary>
@@ -68,8 +99,28 @@ codeunit 50400 MFFieldsControl
         end;
     end;
 
+    /// <summary>
+    /// TranslateTableName
+    /// </summary>
+    /// <param name="recRef"></param>
+    /// <param name="OriginalError"></param>
+    /// <returns></returns>
+    local procedure TranslateTableName(var recRef: RecordRef; OriginalError: Text) TranslatedError: Text
+    begin
+        //Delete the table name in english
+        TranslatedError := DelChr(OriginalError, '<', recRef.Name);
+        //Get the table caption
+        TranslatedError := recRef.Caption + TranslatedError;
+    end;
+
     [IntegrationEvent(false, false)]
     local procedure OnBeforeControlFields(var isHandled: Boolean; var recRef: RecordRef)
+    begin
+
+    end;
+
+    [IntegrationEvent(false, false)]
+    local procedure OnBeforeControlFieldsLines(var isHandled: Boolean; var recRef: RecordRef)
     begin
 
     end;

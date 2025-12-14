@@ -13,6 +13,7 @@ pageextension 50403 MFSalesOrder extends "Sales Order"
         salesline.Reset();
         salesline.SetRange("Document Type", Rec."Document Type");
         salesline.SetRange("Document No.", Rec."No.");
+        salesline.SetFilter(Type, '<>%1', salesline.Type::" ");
         if salesline.FindSet() then
             repeat
                 //Control for each line
